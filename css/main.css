@@ -1,0 +1,198 @@
+/* Start Global Rules */
+:root {
+    --main-transition:0.3s;
+    --fa-style-family-classic: "Font Awesome 6 Free";   
+    --gray-color:#888;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0);
+    outline: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+/* mobile Screen */
+@media (max-width:767px) {
+
+}
+
+/* Small Screen */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+/* Medium Screen */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+
+}
+
+/* Large Screen */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+/* Start Template Engine */
+.page{
+    background-color: #f1f5f9;
+    width: 100%;
+    display: flex;
+}
+/*  */
+.page .sidebar{
+    width: 250px;
+    height: 100svh;
+    background-color: white;
+    box-shadow: 1px 0 20px #ddd;
+    z-index: 1;
+
+}
+.page .sidebar h1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.page .sidebar h1::before,
+.page .sidebar h1::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    transform: translatex(50%);
+    right: 50%;
+}
+.page .sidebar h1::before{
+    top: 100%;
+    width: 50%;
+    height: 4px;
+}
+.page .sidebar h1::after{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: calc(100% - 7.5px);
+    border: white 5px solid;
+    box-sizing: border-box;
+}
+.page .sidebar ul li .active{
+    background-color: #f6f6f6;
+}
+.page .sidebar ul li a{
+    color: black;
+    transition: var(--main-transition)
+}
+.page .sidebar ul li a:hover{
+    background-color: #f6f6f6;
+}
+/*  */
+.page .content{
+    flex: 1;
+}
+.page .content header{
+    background-color: white;
+}
+.page .content header .search input{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-left: 30px;
+    width: 170px;
+    transition: width 0.3s;
+}
+.page .content header .search input:focus{
+    width: 250px;
+}
+.page .content header .search::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\F002";
+    font-weight: 900;
+    position: absolute;
+    bottom: 50%;
+    transform: translatey(50%);
+    left: 10px;
+    color: var(--gray-color);
+    z-index: 1;
+}
+.page .content header .notification{
+    gap: 20px;
+}
+.page .content header .notification span::before{
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    content: '';
+    border-radius: 50%;
+}
+.page .content header .notification img{
+    width: 40px;
+}
+@media (max-width:767px){
+    .page .sidebar{
+        width: 50px;
+        padding: 10px;
+    }
+    .page .sidebar h1{
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .page .sidebar h1::before,
+    .page .sidebar h1::after{
+        display: none;
+    }
+    .page .sidebar ul li a{
+        display: flex;
+        justify-content: center;
+    }
+    .page .sidebar ul li a span{
+        display: none;
+    }
+}
+/* End Template Engine */

@@ -1,0 +1,42 @@
+/* Start Box Model */
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+
+.r-6{
+    border-radius: 6px;
+}
+.r-half{
+    border-radius: 50%;
+}
+
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+
+.text-cap{
+    text-transform: capitalize;
+}
+
+.p-relative{
+    position: relative;
+}
+/* End Box Model */
+
+/* Start Component */
+.d-flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* End Component */
