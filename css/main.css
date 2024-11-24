@@ -179,7 +179,7 @@ a {
         padding: 10px;
     }
     .page .sidebar h1{
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 500;
         margin: 0;
     }
@@ -190,6 +190,9 @@ a {
     .page .sidebar ul li a{
         display: flex;
         justify-content: center;
+    }
+    .page .sidebar ul li a i{
+        font-size: 20px;
     }
     .page .sidebar ul li a span{
         display: none;
