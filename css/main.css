@@ -1,9 +1,14 @@
 /* Start Global Rules */
 :root {
     --main-transition:0.3s;
-    --fa-style-family-classic: "Font Awesome 6 Free";   
+    --fa-style-family-classic: "Font Awesome 6 Free";
+
     --gray-color:#888;
     --blue-color:#0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
 }
 
 * {
@@ -389,8 +394,77 @@ a {
     border: none;
     padding: 5px;
     cursor: pointer;
-   
 }
 /* End Quick Draft */
+
+/* Start Targets */
+.dashboard .targets{
+    padding: 20px;
+}
+.dashboard .targets .top{
+    margin-bottom: 20px;
+}
+.dashboard .targets section{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.dashboard .targets section > span{
+    padding: 30px;
+    background-color: var(--hide-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard .targets section > span i{
+    font-size: 20px;
+    color: var(--color);
+}
+.dashboard .targets section .text{
+    flex: 1;
+}
+.dashboard .targets section .text p{
+    color: var(--gray-color);
+    margin-bottom: 5px;
+}
+.dashboard .targets section .text span{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 30px;
+    display: block;
+}
+.dashboard .targets section .text .line{
+    background-color: var(--hide-color);
+    height: 4px;
+}
+.dashboard .targets section .text .line .fill{
+    background-color: var(--color);
+    height: 100%;
+    width: var(--width);
+}
+.dashboard .targets section .text .line .fill::before{
+    content: '';    
+    border: 5px solid transparent;
+    border-top: 5px solid var(--color);
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    transform: translatex(-50%);
+
+}
+.dashboard .targets section .text .line .fill::after{
+    content: var(--per);
+    position: absolute;
+    bottom: calc(100% + 10px);
+    background-color: var(--color);
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    left: 100%;
+    transform: translatex(-50%);
+
+
+}
+/* End Targets */
 
 /* End Dashboard */
