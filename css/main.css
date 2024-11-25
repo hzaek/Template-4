@@ -3,6 +3,7 @@
     --main-transition:0.3s;
     --fa-style-family-classic: "Font Awesome 6 Free";   
     --gray-color:#888;
+    --blue-color:#0075ff;
 }
 
 * {
@@ -74,6 +75,19 @@ a {
 /* End Global Rules */
 
 /* Start Template Engine */
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: white;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0075f7
+  }
+/* Style the entire scrollbar */
 .page{
     background-color: #f1f5f9;
     width: 100%;
@@ -199,4 +213,173 @@ a {
         display: none;
     }
 }
+.content{
+    overflow: hidden;
+}
+.content .head{
+    font-size: 30px;
+    font-weight: 600;
+}
+.content .head::before{
+    width: 120px;
+    height: 6px;
+    border-radius: 50px;
+    content: '';
+    background-color: white;
+    position:absolute;
+    bottom: 0;
+    left: 20px;
+}
+.content .head::after{
+    width: 40px;
+    height: 6px;
+    border-radius: 50px;
+    content: '';
+    background-color: black;
+    position:absolute;
+    bottom: 0;
+    left: 20px;
+}
 /* End Template Engine */
+
+/* Start Dashboard */
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    gap: 20px;
+}
+@media (max-width:767px){
+    .dashboard{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+.dashboard .box{
+    border-radius: 6px;
+    background-color: white;
+}
+.dashboard .box .top h2{
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.dashboard .box .top p{
+    color: var(--gray-color);
+    text-transform: capitalize;
+}
+
+/* Start Welcome */
+.dashboard .welcome .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #eee;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin-bottom: 50px;
+}
+.dashboard .welcome .top::before{
+    content: '';
+    background: url(../images/logo.png) center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    top: 100%;
+    transform: translatey(-50%);
+    left: 20px;
+}
+@media (max-width:767px){
+    .dashboard .welcome .top::before{
+        left: 50%;
+        transform: translatex(-50%) translatey(-50%);
+
+    }
+}
+.dashboard .welcome .top img{
+    width: 200px;
+}
+@media (max-width:767px){
+    .dashboard .welcome .top img{
+        display: none;
+    }
+}
+.dashboard .welcome .status{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px #eee solid;
+    border-bottom: 1px #eee solid;
+    padding: 20px 0;
+    text-align: center;
+}
+.dashboard .welcome .status h2{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.dashboard .welcome .status p{
+    color: var(--gray-color);
+}
+@media (max-width:767px){
+    .dashboard .welcome .status{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.dashboard .welcome .button{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.dashboard .welcome .button button{
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+/* End Welcome */
+
+/* Start Quick Draft */
+.dashboard .draft{
+    padding: 20px;
+}
+.dashboard .draft .top{
+    margin-bottom: 20px;
+}
+.dashboard .draft form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dashboard .draft form input[type='text']{
+    border: none;
+    background-color: #eee;
+    padding: 10px;
+
+}
+.dashboard .draft form textarea{
+    border: none;
+    background-color: #eee;
+    padding: 10px;
+    height: 200px;
+    resize: none;
+}
+
+.dashboard .draft form .button{
+    margin-left: auto;
+}
+.dashboard .draft .button input{
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+   
+}
+/* End Quick Draft */
+
+/* End Dashboard */

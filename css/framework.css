@@ -9,6 +9,11 @@
 .p-20{
     padding: 20px;
 }
+@media (max-width:767px){
+    .p-sm-10{
+        padding: 10px;
+    }
+}
 
 .r-6{
     border-radius: 6px;
@@ -30,6 +35,10 @@
 
 .p-relative{
     position: relative;
+}
+
+.bg-white{
+    background-color: white;
 }
 /* End Box Model */
 
