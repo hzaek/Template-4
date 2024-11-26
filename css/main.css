@@ -162,7 +162,7 @@ a {
 }
 /*  */
 .page .content{
-    flex: 1;
+    width: 100%;
 }
 .page .content header{
     background-color: white;
@@ -658,8 +658,8 @@ a {
     border-radius: 50%;
 }
 .dashboard .project ul li .on-off::after{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -681,4 +681,90 @@ a {
 }
 /* End Project */
 
+/* Start Reminders */
+.dashboard .reminders li:not(:last-child){
+    margin-bottom: 10px;
+}
+.dashboard .reminders .round{
+    width: 15px;
+    height: 15px;
+    background-color: var(--color);
+    border-radius: 50%;
+}
+.dashboard .reminders .text{
+    border-left: var(--color) solid 2px;
+    padding-left: 10px;
+}
+.dashboard .reminders .text p{
+    color: var(--gray-color);
+}
+/* End Reminders */
+
+.dashboard .post .text{
+    padding: 20px 0;
+    border-top: #ccc 1px solid;
+    border-bottom: #ccc 1px solid;
+    line-height: 1.5;
+}
+
+
+.dashboard .social ul li i{
+    font-size: 20px;
+}
+.dashboard .social ul li i, .dashboard .social ul li span:last-child{
+    color: white;
+    background-color: var(--color);
+    padding: 5px;
+
+}
+.dashboard .social ul li span:last-child{
+    cursor: pointer;
+}
+.dashboard .social ul li .icon{
+    height: 44px;
+    width: 44px;
+    background-color: var(--color);
+    
+}
+.dashboard .social ul li span:first-child{
+    color: var(--color);
+}
+.dashboard .social .num{
+    background-color: var(--bg-color);
+}
+
+/* Start Table */
+.table{
+    overflow:auto;
+    width: 100%;
+    
+}
+.table img{
+    width: 30px;
+    border-radius: 50%;
+}
+.table table{
+    background-color: #eee;
+    min-width: 1000px;
+    overflow: auto;
+    text-transform: capitalize;
+    width: 100%;
+}
+.table thead th{
+    text-align: left;
+    background-color: #eee;
+    padding: 20px;
+}
+.table tbody td{
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    
+}
+.table .image img:not(:first-child){
+
+    margin-left: -20px;
+}
+/* End Table */
+#faf7f7
 /* End Dashboard */

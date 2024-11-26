@@ -1,4 +1,7 @@
 /* Start Box Model */
+.fs-12{
+    font-size: 12px;
+}
 .fs-14{
     font-size: 14px;
 }
@@ -27,6 +30,14 @@
 .mt-10{
     margin-top: 10px;
 }
+
+.mr-10{
+    margin-right: 10px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+
 .mb-10{
     margin-bottom: 10px;
 }
@@ -61,6 +72,15 @@
 }
 .d-flex{
     display: flex;
+}
+.ali-center{
+    align-items: center;
+}
+.flex-1{
+    flex: 1;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 
 .text-cap{
