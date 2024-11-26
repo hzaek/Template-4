@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 
 }
 
@@ -467,9 +467,17 @@ a {
 
 /* Start Tickets */
 .dashboard .tickets .status{
-    display: grid;
+    display: flex;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill,minmax(200px ,1fr));
+    flex-wrap: wrap;
+}
+.dashboard .tickets .status section{
+    width: calc(50% - 20px);
+}
+@media (max-width:767px){
+    .dashboard .tickets .status section{
+        width: 100%;
+    }
 }
 /* End Tickets */
 
@@ -501,5 +509,56 @@ a {
     }
 }
 /* End News */
+
+/* Start Tasks */
+.dashboard .tasks ul li{
+    padding-top: 10px;
+}
+.dashboard .tasks ul li:not(:last-child){
+    padding-bottom: 10px;
+    border-bottom:#eee solid 1px;
+}
+.dashboard .tasks ul li i{
+    margin-left:20px;
+}
+.dashboard .tasks ul li .text h2{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+.dashboard .tasks ul li .text p{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: var(--gray-color);
+}
+.dashboard .tasks ul .deleted{
+    opacity: 0.3;
+}
+.dashboard .tasks ul .deleted h2 , .dashboard .tasks ul .deleted p{
+    text-decoration: line-through;
+} 
+/* End Tasks */
+
+/* Start Top Search */
+.dashboard .search ul li:not(:first-child) span:last-child{
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 6px;
+    width: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+.dashboard .search ul li:not(:last-child){
+    margin-bottom: 20px;
+}
+.dashboard .search ul li:first-child{
+    color: var(--gray-color);
+    
+}
+.dashboard .search ul li:first-child{
+    color: var(--gray-color);
+}
+/* End Top Search */
 
 /* End Dashboard */
