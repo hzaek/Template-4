@@ -734,7 +734,7 @@ a {
 }
 
 /* Start Table */
-.table{
+.wrapper{
     overflow:auto;
     width: 100%;
     
@@ -760,6 +760,17 @@ a {
     background-color: white;
     padding: 20px;
     
+}
+.table tbody tr td:last-child {
+    text-align: center;
+
+}
+.table tbody td span{
+    
+    background-color: var(--color);
+    color: white;
+    padding:5px;
+    border-radius: 6px;
 }
 .table .image img:not(:first-child){
 
