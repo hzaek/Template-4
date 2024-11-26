@@ -759,11 +759,15 @@ a {
     text-align: left;
     background-color: white;
     padding: 20px;
+    transition: var(--main-transition);
     
 }
 .table tbody tr td:last-child {
     text-align: center;
 
+}
+.table tbody tr:hover td{
+    background-color: #faf7f7;
 }
 .table tbody td span{
     
@@ -777,5 +781,5 @@ a {
     margin-left: -20px;
 }
 /* End Table */
-#faf7f7
+
 /* End Dashboard */
