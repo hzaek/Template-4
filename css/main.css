@@ -274,12 +274,12 @@ a {
     border-radius: 6px;
     background-color: white;
 }
-.dashboard .box .top h2{
+.dashboard .top h2{
     margin-bottom: 5px;
     font-weight: 600;
     text-transform: capitalize;
 }
-.dashboard .box .top p{
+.dashboard .top p{
     color: var(--gray-color);
     text-transform: capitalize;
 }
@@ -462,9 +462,44 @@ a {
     border-radius: 6px;
     left: 100%;
     transform: translatex(-50%);
-
-
 }
 /* End Targets */
+
+/* Start Tickets */
+.dashboard .tickets .status{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(200px ,1fr));
+}
+/* End Tickets */
+
+/* Start News */
+.dashboard .news ul li{
+    padding-top:20px ;
+    flex-wrap: nowrap;
+
+}
+.dashboard .news ul li:not(:last-child){
+    border-bottom: 1px solid #ccc;
+    padding-bottom:20px;
+
+}
+.dashboard .news ul li img{
+    max-width: 100px;
+    border-radius: 6px;
+}
+@media (max-width:767px){
+    .dashboard .news ul li{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .dashboard .news ul li .title{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+/* End News */
 
 /* End Dashboard */

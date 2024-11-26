@@ -1,8 +1,42 @@
 /* Start Box Model */
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-30{
+    font-size: 30px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fw-600{
+    font-weight: 600;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+.mt-10{
+    margin-top: 10px;
+}
 .mb-10{
     margin-bottom: 10px;
 }
+.mb-20{
+    margin-bottom: 20px;
+}
 
+.p-5{
+    padding: 5px;
+}
 .p-10{
     padding: 10px;
 }
@@ -32,6 +66,9 @@
 .text-cap{
     text-transform: capitalize;
 }
+.text-center{
+    text-align: center;
+}
 
 .p-relative{
     position: relative;
@@ -40,12 +77,59 @@
 .bg-white{
     background-color: white;
 }
+.bg-eee{
+    background-color: #eee;
+}
+.orange{
+    color:var(--orange-color) ;
+
+}
+.blue{
+    color:var(--blue-color) ;
+
+}
+.green{
+    color:var(--green-color) ;
+
+}
+.red{
+    color:var(--red-color) ;
+
+}
+.gray{
+    color:var(--gray-color) ;
+
+}
+
+.gap-20{
+    gap: 20px;
+}
+.gap-10{
+    gap: 10px;
+}
 /* End Box Model */
 
 /* Start Component */
+.d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
 .d-flex-between-center{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.flex-column-wrap{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 /* End Component */
+
+/* Start Mod */
+.ccc-border{
+    border: solid 1px #ccc;
+    border-radius: 6px;
+}
+/* End Mod */
