@@ -115,6 +115,35 @@
 .bg-eee{
     background-color: #eee;
 }
+
+
+.bg-orange{
+    background-color:var(--orange-color) ;
+
+}
+.bg-blue{
+    background-color:var(--blue-color) ;
+
+}
+.bg-green{
+    background-color:var(--green-color) ;
+
+}
+.bg-red{
+    background-color:var(--red-color) ;
+
+}
+.bg-gray{
+    background-color:var(--gray-color) ;
+
+}
+.bg-eee{
+    background-color: #eee;
+}
+
+.black{
+    color: black;
+}
 .orange{
     color:var(--orange-color) ;
 
@@ -134,6 +163,9 @@
 .gray{
     color:var(--gray-color) ;
 
+}
+.white{
+    color: white;
 }
 
 .gap-20{
@@ -160,6 +192,11 @@
     justify-content: space-between;
     align-items: center;
 }
+.d-flex-between-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 .flex-column-wrap{
     flex-direction: column;
     flex-wrap: wrap;
@@ -171,12 +208,20 @@
     border: solid 1px #ccc;
     border-radius: 6px;
 }
+.ccc-border-b{
+    border-bottom: solid 1px #ccc;
+
+}
+.ccc-border-t{
+    border-top: solid 1px #ccc;
+
+}
 /* End Mod */
 
 
 
 /* Start Toggle */
-label[for='toggle']{
+.toggle{
     background-color: #ccc;
     width: 80px;
     display: block;
@@ -186,11 +231,11 @@ label[for='toggle']{
     z-index: 1;
     cursor: pointer;
 }
-label[for='toggle'] input{
+.toggle input{
     visibility: hidden;
 
 }
-label[for='toggle'] .round{
+.toggle .round{
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -204,24 +249,24 @@ label[for='toggle'] .round{
     justify-content: center;
     align-items: center;
 }
-label[for='toggle'] .round::before{
+.toggle .round::before{
     color: #ccc;
     font-family: var(--fa-style-family-classic);
     content: "\f00d";
     font-weight: 900;
 
 }
-label[for='toggle'] input:checked + .round{
+.toggle input:checked + .round{
     left: calc(100% - 27.5px);
 }
-label[for='toggle'] input:checked + .round::before{
+.toggle input:checked + .round::before{
     content: "\f00c";
     color: var(--blue-color);
 }
-label[for='toggle'] input ~ .bg{
+.toggle input ~ .bg{
     transition: var(--main-transition);
 }
-label[for='toggle'] input ~ .bg {
+.toggle input ~ .bg {
     height: 100%;
     width: 100%;
     background-color: #ccc;
@@ -231,7 +276,7 @@ label[for='toggle'] input ~ .bg {
     left: 0;
     z-index: -1;
 }
-label[for='toggle'] input:checked ~ .bg {
+.toggle input:checked ~ .bg {
     height: 100%;
     width: 100%;
     background-color: var(--blue-color);
