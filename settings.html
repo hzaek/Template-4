@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Link normalize.css File -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Link awesome font -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Link My FrameWork -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <!-- Link main.css File -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <aside class="sidebar p-20">
+            <div class="wrapper">
+                <h1 class="head">Hamza</h1>
+                <ul>
+                    <li class="mb-10">
+                        <a href="./index.html" class="r-6 p-10 d-block ">
+                            <i class="fa-regular fa-chart-bar fa-fw"></i>
+                            <span class="text-cap">dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-10">
+                        <a href="./settings.html" class="r-6 p-10 d-block active">
+                            <i class="fa-solid fa-gear fa-fw"></i>
+                            <span class="text-cap">settings</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-10">
+                        <a href="./profile.html" class="r-6 p-10 d-block">
+                            <i class="fa-regular fa-user fa-fw"></i>
+                            <span class="text-cap">profile</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-10">
+                        <a href="./projects.html" class="r-6 p-10 d-block">
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
+                            <span class="text-cap">projects</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-10">
+                        <a href="./courses.html" class="r-6 p-10 d-block">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span class="text-cap">courses</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-10">
+                        <a href="./friends.html" class="r-6 p-10 d-block">
+                            <i class="fa-regular fa-circle-user fa-fw"></i>
+                            <span class="text-cap">friends</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-10">
+                        <a href="./files.html" class="r-6 p-10 d-block">
+                            <i class="fa-regular fa-file fa-fw"></i>
+                            <span class="text-cap">files</span>
+                        </a>
+                    </li>
+
+                    <li class="mb-10">
+                        <a href="./plans.html" class="r-6 p-10 d-block">
+                            <i class="fa-regular fa-credit-card fa-fw"></i>
+                            <span class="text-cap">plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="content">
+            <header class="p-10 d-flex-between-center">
+                <div class="search p-relative">
+                    <input type="text" placeholder="Type A Keyword" class="p-10">
+                </div>
+                <div class="notification d-flex-between-center">
+                    <span class="p-relative"><i class="fa-regular fa-bell fa-lg p-relative"></i></span>
+                    <img src="./images/logo.png" alt="">
+                </div>
+            </header>
+            <!-- Start Settings -->
+            <div class="head text-cap p-20 p-relative p-sm-10">settings</div>
+            <main class="settings p-20">
+
+                <div class="control bg-white r-6 p-20">
+                    <div class="top mb-20">
+                        <h2 class="mb-20">site control</h2>
+                        <p class="fs-14">Control The Website If There Is Maintenance</p>
+                    </div>
+                    <div class="content">
+                        <div class="ctrl d-flex-between-center mb-20">
+                            <div class="text flex-1 ">
+                                <h3 class="fs-16 mb-10 fw-600">Website Control</h3>
+                                <p class="gray fs-12">Open/Close Website And Type The Reason</p>
+                            </div>
+                            <label for="toggle" class="">
+                                <input type="checkbox" id="toggle">
+                                <div class="round"></div>
+                                <div class="bg"></div>
+                            </label>
+                        </div>
+                        <textarea class="text-cap" name="" id="" placeholder="close message content"></textarea>
+                    </div>
+                </div>
+            </main>
+            <!-- End Settings -->
+
+        </div>
+    </div>
+</body>
+
+</html>
