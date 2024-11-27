@@ -37,7 +37,16 @@
 .mr-20{
     margin-right: 20px;
 }
+.ml-10{
+    margin-left: 10px;
+}
+.ml-20{
+    margin-left: 20px;
+}
 
+.mb-5{
+    margin-bottom: 5px;
+}
 .mb-10{
     margin-bottom: 10px;
 }
@@ -45,6 +54,12 @@
     margin-bottom: 20px;
 }
 
+.p-rl-5{
+    padding: 0px 5px;
+}
+.p-tb-5{
+    padding: 5px 0;
+}
 .p-5{
     padding: 5px;
 }
@@ -126,6 +141,10 @@
 }
 .gap-10{
     gap: 10px;
+}
+
+.full-w{
+    width: 100%;
 }
 /* End Box Model */
 
