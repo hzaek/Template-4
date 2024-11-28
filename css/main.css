@@ -897,5 +897,10 @@ a {
     border: var(--blue-color) 1px solid;
     border-radius: 6px; 
 }
+@media (max-width:767px){
+    .settings .backup .plan{
+        flex-direction: column;
+    }
+}
 /* End Settings */
 
