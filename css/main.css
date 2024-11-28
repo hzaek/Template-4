@@ -904,3 +904,86 @@ a {
 }
 /* End Settings */
 
+/* Start Profile */
+.profile .main-profile{
+    padding: 0;
+}
+.profile .main-profile .logo{
+    max-width: 250px;
+    width: 100%;
+    border-right: #ccc 1px solid;
+    padding: 20px;
+}
+@media (max-width:767px){
+    .profile .main-profile .logo{
+        max-width: 100%;
+        border: none;
+    }
+    .profile .main-profile{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.profile .main-profile .logo img{
+    width: 120px;
+    margin-bottom: 10px;
+    margin:10px auto;
+}
+.profile .main-profile .logo span{
+    color: gray;
+    text-align: center;
+}
+.profile .main-profile .progress{
+    width: 100px;
+    margin: 10px auto;
+    margin-top: 0;
+    background-color: #eee;
+    height: 6px;
+    border-radius: 60px;
+    position: relative;
+}
+.profile .main-profile .progress::before{
+    content: '';
+    width: 70%;
+    margin: 10px auto;
+    margin-top: 0;
+    background-color: var(--blue-color);
+    height: 6px;
+    border-radius: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.profile .main-profile .info > div{
+    padding: 20px;
+    transition: var(--main-transition);
+}
+.profile .main-profile .info > div:not(:last-child){
+    border-bottom: 1px #ccc solid;
+}
+
+.profile .main-profile .info > div:hover{
+    background-color: #fafafa;
+}
+.profile .main-profile .info .grid-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+
+}
+@media (max-width:767px){
+    .profile .main-profile .info{
+        width: 100%;
+    }
+    .profile .main-profile .info > div{
+        text-align: center;
+
+        width: 100%;
+    }
+    .profile .main-profile .info .grid-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+/* End Profile */
