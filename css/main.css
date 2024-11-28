@@ -825,4 +825,77 @@ a {
     margin-left: 10px;
     width: 60px;
 }
+
+.settings .social-info ul i{
+    transition: var(--main-transition);
+}
+.settings .social-info ul input{
+    order: 2;
+    border:1px var(--gray-color) solid;
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.settings .social-info ul li .icon{
+    border:1px var(--gray-color) solid;
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.settings .social-info ul li input:focus ~ .icon i{
+    color: black;
+}
+
+.settings .backup .time{
+    border-bottom: 1px solid #eee;
+}
+.settings .backup .time input{
+    width: 20px;
+    height: 20px;
+    
+}
+.settings .backup .plan li{
+    position: relative;
+    z-index: 1;
+}
+.settings .backup .plan li label{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.settings .backup .plan li input{
+    display: block;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: none;
+    appearance: none;
+    background-color: black;
+    
+
+}
+.settings .backup .plan li input:checked ~ i{
+    color: #0075f7;
+}
+.settings .backup .plan li{
+    border: 1px #ccc solid;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    
+}
+.settings .backup .plan li input:checked ~ span{
+    color: var(--blue-alt-color);
+}
+.settings .backup .plan li input:checked ~ label{
+    border: var(--blue-color) 1px solid;
+    border-radius: 6px; 
+}
 /* End Settings */
+
