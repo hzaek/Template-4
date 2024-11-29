@@ -970,7 +970,30 @@ a {
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
 
 }
+
+.profile .skills ul li:not(:last-child){
+    border-bottom: 2px #eee solid;
+}
+
+.profile .activities ul li:not(:last-child){
+    border-bottom: 2px #eee solid;
+}
+.profile .activities img{
+    width: 60px;
+    height: 60px;
+
+    max-width: 100%;
+}
+.profile .activities .text{
+    flex: 1;
+}
+.profile .activities .time{
+    text-align: right;
+}
 @media (max-width:767px){
+    .profile .main-profile{
+        margin-bottom: 10px;
+    }
     .profile .main-profile .info{
         width: 100%;
     }
@@ -984,6 +1007,32 @@ a {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
+    .profile .wrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .profile .skills ul li{
+        justify-content: center;
+    }
+    .profile .activities ul li .bn{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .profile .activities ul li .bn .text{
+        text-align: center;
+    }
+    .profile .activities ul li{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .profile .activities ul li .time{
+        text-align: center;
+    }
+
 }
 
 /* End Profile */
