@@ -37,6 +37,9 @@
     margin-top: 10px;
 }
 
+.mr-5{
+    margin-right: 5px;
+}
 .mr-10{
     margin-right: 10px;
 }
@@ -232,6 +235,9 @@
     flex-wrap: wrap;
 }
 
+.lh-3{
+    line-height: 1.3;
+}
 
 /* End Component */
 

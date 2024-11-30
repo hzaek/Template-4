@@ -1112,3 +1112,52 @@ a {
     top: 0;
 }
 /* End Projects */
+/* Courses */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+@media (max-width:767px){
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+}
+.courses .card{
+    position: relative;
+}
+.courses .card .cover{
+    max-width: 100%;
+    width: 100%;
+}
+.courses .card .info{
+    border-top: 1px #ccc solid;
+    position: relative;
+}
+.courses .card .info::before{
+    content: 'Course Info';
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    transform: translate(50%,50%);
+    background-color: var(--blue-color);
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+
+}
+.courses .card::before{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: 10px;
+    background-image: url(../images/team-01.png);
+    content: '';
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px white solid;
+}
+
+/* Courses */
