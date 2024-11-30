@@ -36,6 +36,9 @@
 .mt-10{
     margin-top: 10px;
 }
+.mb-10{
+    margin-bottom: 10px;
+}
 
 .mr-5{
     margin-right: 5px;
@@ -85,6 +88,9 @@
 }
 .p-tb-20{
     padding: 20px 0;
+}
+.pt-10{
+    padding-top: 10px;
 }
 .p-5{
     padding: 5px;
