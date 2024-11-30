@@ -1249,3 +1249,32 @@ a {
     }
 }
 /* Files */
+/* Plans */
+.plans{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+}
+@media (max-width:767px){
+    .plans{
+        gap:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.plans > div .up{
+    padding: 30px;
+    border: 3px white solid;
+    outline: 3px var(--color) solid;
+}
+.plans > div .up span::before{
+    content: '$';
+    top: -10px;
+    left: -20px;
+    font-size: 30px;
+    position: absolute;
+}
+.plans > div ul li{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+/* Plans */
